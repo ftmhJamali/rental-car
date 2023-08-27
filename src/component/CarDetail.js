@@ -99,7 +99,9 @@ const CarDetail = ({ setIsShow, isShow }) => {
                       <p className="text-grayText">Gasoline </p>
                     </div>
                     <div className="flex flex-col">
-                      <p className="text-grayslate mb-4">{car.capacity} Preson</p>
+                      <p className="text-grayslate mb-4">
+                        {car.capacity} Preson
+                      </p>
                       <p className="text-grayslate">{car.gasoline} L</p>
                     </div>
                   </div>
@@ -224,7 +226,7 @@ const CarDetail = ({ setIsShow, isShow }) => {
                             </div>
                             <div className="flex text-grayText items-center">
                               <span>
-                                <img src={people} alt="" width="35.5 px" />{" "}
+                                <img src={people} alt="" width="35.5 px" />
                               </span>
                               <span className="ms-1">{car.capacity}People</span>
                             </div>
@@ -238,7 +240,7 @@ const CarDetail = ({ setIsShow, isShow }) => {
                             </span>
                           </div>
 
-                          <Link to={`car/${car.id}`} state={{ car }}>
+                          <Link to={`/car/${car.id}`} state={{ car }}>
                             <button className="text-white bg-carblue rounded px-1 py-1">
                               Rent Now
                             </button>

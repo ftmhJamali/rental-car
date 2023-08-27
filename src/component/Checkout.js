@@ -48,7 +48,12 @@ const Checkout = ({pickValue,setPickValue,dropValue,setDropValue}) => {
   let resultDay = dropValue.diff(pickValue, "days");
 
   const totalPrice = car.price * resultDay;
-  console.log(pickValue._i);
+
+
+  //console.log(pickValue._i);
+
+
+
   const initialValues = {
     name: "",
     phoneNumber: "",

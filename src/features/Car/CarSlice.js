@@ -1307,6 +1307,7 @@ export const {
   toggleCapacity,
   searchTitle,
   peymentToggle,
+  
 } = carSlice.actions;
 
 export default carSlice.reducer;

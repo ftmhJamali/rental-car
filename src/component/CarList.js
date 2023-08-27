@@ -1,28 +1,29 @@
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 import Layout from "../layout/layout";
 import Category from "./Category";
-import gasoline from "../assets/icons/gas.png";
+// import gasoline from "../assets/icons/gas.png";
 import CloseIcon from "@mui/icons-material/Close";
-import manual from "../assets/icons/Car.png";
+// import manual from "../assets/icons/Car.png";
 import DialogTitle from "@mui/material/DialogTitle";
 import Dialog from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
-import people from "../assets/icons/profile-2user.png";
+// import people from "../assets/icons/profile-2user.png";
 import * as React from "react";
-import Checkbox from "@mui/material/Checkbox";
-import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
-import Favorite from "@mui/icons-material/Favorite";
+// import Checkbox from "@mui/material/Checkbox";
+// import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
+// import Favorite from "@mui/icons-material/Favorite";
 import PickAndDrop from "./PickAndDrop";
 import Footer from "./Footer";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import useLocalStorage from "use-local-storage";
+import CarItems from "./CarItems";
 
 const Carlist = ({ isShow, setIsShow }) => {
-  const { filteredCar } = useSelector((state) => state.car);
+  // const { filteredCar } = useSelector((state) => state.car);
   const [open, setOpen] = useLocalStorage(true);
   // console.log(car)
 
-  const label = { inputProps: { "aria-label": "Checkbox demo" } };
+  // const label = { inputProps: { "aria-label": "Checkbox demo" } };
   // const [showCar,setShowCar]=useState(false)
   return (
     <>
@@ -67,7 +68,8 @@ const Carlist = ({ isShow, setIsShow }) => {
                   isShow ? " md:grid-cols-3" : "md:grid-cols-4 "
                 }`}
               >
-                {filteredCar.map((car) => {
+                <CarItems/>
+                {/* {filteredCar.map((car) => {
                   return (
                     <div className="bg-white w-80 p-4 rounded-lg " key={car.id}>
                       <div className=" flex justify-between items-center">
@@ -124,7 +126,7 @@ const Carlist = ({ isShow, setIsShow }) => {
                       </div>
                     </div>
                   );
-                })}
+                })} */}
                 <div></div>
 
                 <div></div>

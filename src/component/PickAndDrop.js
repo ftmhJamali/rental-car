@@ -51,29 +51,17 @@ const PickAndDrop = ({ isShow }) => {
             <img src={line} alt="" />
             <div className="flex flex-col mx-3">
               <p className="font-Jakarta">Date</p>
-              <select
-                type="date"
-                className={`bg-white border-0 w-24  my-3 ${
+              <input
+                className={`bg-white outline-none border-0 w-24  my-3 ${
                   isShow ? "md:w-36" : "md:w-40"
                 }`}
-                name="date"
-                id="date"
-              >
-                <option>Select your date</option>
-                {/* <option>Rome</option>
-                <option>Milan</option>
-                <option>Naples</option>
-                <option>Turin</option>
-                <option>Palermo</option>
-                <option>Genoa</option>
-                <option>Bolonga</option>
-                <option>Florence</option> */}
-              </select>
+                type="date"
+              />
             </div>
             <img src={line} alt="" />
             <div className="flex flex-col mx-3">
               <p className="font-Jakarta">Time</p>
-              <select
+              {/* <select
                 className={`bg-white border-0 w-24  my-3 ${
                   isShow ? "md:w-36" : "md:w-40"
                 }`}
@@ -90,7 +78,13 @@ const PickAndDrop = ({ isShow }) => {
                 <option>2:00 AM</option>
                 <option>3:00 AM</option>
                 <option>4:00 AM</option>
-              </select>
+              </select> */}
+              <input
+                className={`bg-white border-0 outline-none w-24  my-3 ${
+                  isShow ? "md:w-36" : "md:w-40"
+                }`}
+                type="time"
+              />
             </div>
           </div>
         </div>
@@ -136,7 +130,7 @@ const PickAndDrop = ({ isShow }) => {
             <img src={line} alt="" />
             <div className="flex flex-col mx-3">
               <p className="font-Jakarta">Date</p>
-              <select
+              {/* <select
                 type="date"
                 className={`bg-white border-0 w-24  my-3 ${
                   isShow ? "md:w-36" : "md:w-40"
@@ -145,37 +139,24 @@ const PickAndDrop = ({ isShow }) => {
                 id="date"
               >
                 <option>Select your date</option>
-                {/* <option>Rome</option>
-                <option>Milan</option>
-                <option>Naples</option>
-                <option>Turin</option>
-                <option>Palermo</option>
-                <option>Genoa</option>
-                <option>Bolonga</option>
-                <option>Florence</option> */}
-              </select>
+               
+              </select> */}
+              <input
+                className={`bg-white outline-none border-0 w-24  my-3 ${
+                  isShow ? "md:w-36" : "md:w-40"
+                }`}
+                type="date"
+              />
             </div>
             <img src={line} alt="" />
             <div className="flex flex-col mx-3">
               <p className="font-Jakarta">Time</p>
-              <select
-                className={`bg-white border-0 w-24  my-3 ${
+              <input
+                className={`bg-white border-0 outline-none w-24  my-3 ${
                   isShow ? "md:w-36" : "md:w-40"
                 }`}
-                name="time"
-                id="time"
-              >
-                <option>Select your time</option>
-                <option>8:00 AM</option>
-                <option>9:00 AM</option>
-                <option>10:00 AM</option>
-                <option>11:00 AM</option>
-                <option>12:00 AM</option>
-                <option>1:00 AM</option>
-                <option>2:00 AM</option>
-                <option>3:00 AM</option>
-                <option>4:00 AM</option>
-              </select>
+                type="time"
+              />
             </div>
           </div>
         </div>
